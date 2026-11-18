@@ -274,42 +274,6 @@ h1 {
   margin: 40px 0 20px;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  justify-content: center;
-}
-
-.polaroid {
-  width: min(190px, 42%);
-  background: white;
-  padding: 9px 9px 30px;
-  border-radius: 7px;
-  box-shadow: 0 6px 15px #9e728022;
-  transform: rotate(var(--r));
-  transition: 0.25s;
-}
-
-.polaroid:hover {
-  transform: rotate(0) translateY(-6px);
-}
-
-.polaroid img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 4px;
-  background: #ffeaf1;
-}
-
-.polaroid p {
-  text-align: center;
-  margin: 7px 0 -19px;
-  font: 600 13px 'Quicksand';
-  color: #ad8295;
-}
-
 .wish {
   background: #fff3f7;
   border: 2px dashed #ffc3d6;
@@ -378,50 +342,6 @@ footer {
   font-size: 13px;
 }
 
-.controls {
-  position: fixed;
-  right: 15px;
-  bottom: max(12px, env(safe-area-inset-bottom));
-  z-index: 10;
-  display: flex;
-  gap: 8px;
-}
-
-.control {
-  border: 2px solid #ffd0df;
-  background: #fff;
-  color: #c77898;
-  border-radius: 30px;
-  padding: 10px 14px;
-  font: 700 11px 'Quicksand';
-  box-shadow: 0 5px 15px #d78da522;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-}
-
-#music-note {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.95);
-  color: #c77898;
-  padding: 14px 22px;
-  border-radius: 30px;
-  font: 700 13px 'Quicksand';
-  box-shadow: 0 5px 15px #d78da522;
-  z-index: 100;
-  display: none;
-  pointer-events: none;
-}
-
-@media (max-width: 480px) {
-  .envelope { height: 220px; }
-  .bodytext { font-size: 16px; }
-  .controls { right: 8px; bottom: 8px; }
-  .control { padding: 9px 11px; }
-}
-
 @media (max-width: 600px) {
   header { padding-left: 16px; padding-right: 16px; }
   main { padding: 8px 14px 105px; }
@@ -437,30 +357,20 @@ footer {
   .bodytext { font-size: 16px; line-height: 1.85; overflow-wrap: anywhere; }
   .signature { font-size: 24px; }
   .section-title { font-size: 23px; margin: 32px 0 16px; }
-  .gallery { gap: 12px; }
-  .polaroid { width: calc(50% - 8px); max-width: 170px; padding: 7px 7px 25px; }
-  .polaroid p { font-size: 11px; }
   .wish { padding: 18px 15px; margin: 32px auto 12px; }
   .wish h2 { font-size: 22px; }
   .wish p { font-size: 14px; line-height: 1.75; }
   .giftbtn { min-height: 48px; padding: 13px 20px; font-size: 13px; }
   .giftmsg { font-size: 16px; padding: 18px; margin: 17px 0; }
   footer { padding: 30px 18px 14px; font-size: 12px; }
-  .controls { left: 12px; right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); justify-content: center; gap: 10px; }
-  .control { flex: 1; max-width: 180px; min-height: 44px; padding: 11px 12px; font-size: 12px; }
 }
 
 @media (max-width: 360px) {
   main { padding-left: 10px; padding-right: 10px; }
   .envelope { height: 195px; }
-  .polaroid { width: calc(50% - 7px); }
-  .controls { left: 8px; right: 8px; }
-  .control { font-size: 11px; }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
   main { padding: 20px 24px 80px; }
   .envelope { width: min(390px, 85vw); }
-  .polaroid { width: min(220px, 30%); }
-  .controls { right: 20px; bottom: max(16px, env(safe-area-inset-bottom)); }
 }
