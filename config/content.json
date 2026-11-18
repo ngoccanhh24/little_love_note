@@ -1,0 +1,17 @@
+{
+  "headline": "Có thư gửi cậu nè!",
+  "subline": "Mở ra đi, có điều dễ thương đang chờ cậu đó.",
+  "salutation": "He lu cậu iu,",
+  "date": "Một ngày thật xinh",
+  "body": "Tớ có một điều muốn gửi đến cậu nè!\n\nCảm ơn cậu vì đã xuất hiện trong cuộc sống của tớ, vì những lần cùng cười, cùng kể nhau nghe đủ thứ chuyện trên đời.\n\nỞ bên cậu, những điều bình thường cũng trở nên đáng nhớ hơn một chút. Mong là chúng mình sẽ còn có thật nhiều ngày vui như thế nữa nha. 💗",
+  "signature": "Thương cậu nhiều ơi là nhiều! ♡",
+  "footer": "Được làm bằng tất cả sự dễ thương dành cho cậu ♡",
+  "wish": "Chúc cậu mỗi ngày đều vui vẻ, ăn ngon, ngủ ngoan, gặp nhiều điều may mắn. Dù có chuyện gì xảy ra thì cũng nhớ yêu thương bản thân thật nhiều nhé!",
+  "gift": "Bất ngờ chưa? Điều tớ muốn tặng cậu nhất chính là thật nhiều cái ôm, thật nhiều nụ cười và thật nhiều ngày tháng có nhau. 💞",
+  "music": "music/love.mp3",
+  "photos": [
+    { "src": "photo1.jpg", "caption": "một chiếc kỷ niệm ♡" },
+    { "src": "photo2.jpg", "caption": "một chiếc kỷ niệm ♡" },
+    { "src": "photo3.jpg", "caption": "một chiếc kỷ niệm ♡" }
+  ]
+}

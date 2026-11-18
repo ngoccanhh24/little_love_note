@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root {
+  --pink: #ff9fbd;
+  --pink2: #ffd6e4;
+  --cream: #fffaf2;
+  --ink: #65515b;
+  --purple: #c7b5f5;
+  --mint: #bcebdc;
+  --yellow: #ffe8a3;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff0f5;
+  color: var(--ink);
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
+  min-height: 100svh;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: radial-gradient(#f6b8cc 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.float {
+  position: fixed;
+  z-index: 0;
+  opacity: 0.55;
+  pointer-events: none;
+  font-size: 24px;
+  animation: float 5s ease-in-out infinite;
+}
+
+.f1 { top: 15%; left: 5%; }
+.f2 { top: 28%; right: 7%; animation-delay: 1s; }
+.f3 { bottom: 15%; left: 8%; animation-delay: 2s; }
+.f4 { bottom: 25%; right: 5%; animation-delay: 1.5s; }
+
+@keyframes float {
+  50% { transform: translateY(-15px) rotate(12deg); }
+}
+
+header {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 22px;
+  padding-top: max(14px, env(safe-area-inset-top));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+  color: #e67fa2;
+}
+
+.logo {
+  font-family: 'Baloo 2';
+  font-size: 22px;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
+  margin: auto;
+  padding: 16px 20px 80px;
+}
+
+.hero {
+  text-align: center;
+  margin: 28px 0 20px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 7px 15px;
+  background: #fff;
+  border: 2px dashed #ffc0d4;
+  border-radius: 30px;
+  color: #dc82a2;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+h1 {
+  font: 800 clamp(36px, 7vw, 62px) / 1.08 'Baloo 2';
+  color: #e77fa3;
+  margin: 12px 0 3px;
+}
+
+.sub {
+  font-size: 16px;
+  color: #987d8b;
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+  margin: 32px auto 12px;
+  perspective: 900px;
+}
+
+.envelope {
+  width: min(370px, 88vw);
+  height: 245px;
+  position: relative;
+  cursor: pointer;
+  filter: drop-shadow(0 12px 16px #d78da533);
+  transition: 0.25s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.envelope:hover {
+  transform: translateY(-5px) rotate(-1deg);
+}
+
+.back {
+  position: absolute;
+  inset: 0;
+  background: #ffb7cf;
+  border-radius: 18px;
+}
+
+.paper {
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  bottom: 7%;
+  height: 83%;
+  background: #fffdf8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 18px;
+  transition: transform 0.8s;
+  z-index: 1;
+}
+
+.paper span {
+  font: 700 28px 'Baloo 2';
+  color: #e982a4;
+}
+
+.front {
+  position: absolute;
+  inset: 0;
+  background: #ffcee0;
+  clip-path: polygon(0 0, 50% 57%, 100% 0, 100% 100%, 0 100%);
+  border-radius: 18px;
+  z-index: 3;
+}
+
+.flap {
+  position: absolute;
+  inset: 0;
+  background: #ffa9c5;
+  clip-path: polygon(0 0, 100% 0, 50% 60%);
+  transform-origin: top;
+  transition: transform 0.6s;
+  z-index: 4;
+}
+
+.heart {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 49%;
+  transform: translate(-50%, -50%);
+  font-size: 39px;
+  filter: drop-shadow(0 2px 2px #b56c8655);
+  transition: 0.3s;
+}
+
+.envelope.open .flap {
+  transform: rotateX(180deg);
+  z-index: 0;
+}
+
+.envelope.open .paper {
+  transform: translateY(-135px);
+}
+
+.envelope.open .heart {
+  opacity: 0;
+}
+
+.hint {
+  text-align: center;
+  color: #bd8a9f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.letter {
+  display: none;
+  margin: 35px auto 0;
+  max-width: 720px;
+  background: #fffdf8;
+  border: 3px solid #ffd6e4;
+  border-radius: 25px;
+  padding: clamp(22px, 5vw, 48px);
+  box-shadow: 0 14px 35px #d78da522;
+  position: relative;
+}
+
+.letter:after {
+  content: "♡";
+  position: absolute;
+  right: 22px;
+  top: 12px;
+  color: #ffb6ce;
+  font-size: 25px;
+}
+
+.letter.show {
+  display: block;
+  animation: pop 0.65s both;
+}
+
+@keyframes pop {
+  from { opacity: 0; transform: translateY(20px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+.date {
+  text-align: right;
+  color: #c28da3;
+  font-size: 13px;
+}
+
+.hello {
+  font: 700 32px 'Baloo 2';
+  color: #e982a4;
+  margin: 12px 0;
+}
+
+.bodytext {
+  font-size: 17px;
+  line-height: 1.9;
+  white-space: pre-wrap;
+}
+
+.signature {
+  text-align: right;
+  font: 700 27px 'Baloo 2';
+  color: #e982a4;
+  margin-top: 22px;
+}
+
+.section-title {
+  text-align: center;
+  font: 800 27px 'Baloo 2';
+  color: #df83a4;
+  margin: 40px 0 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+
+.polaroid {
+  width: min(190px, 42%);
+  background: white;
+  padding: 9px 9px 30px;
+  border-radius: 7px;
+  box-shadow: 0 6px 15px #9e728022;
+  transform: rotate(var(--r));
+  transition: 0.25s;
+}
+
+.polaroid:hover {
+  transform: rotate(0) translateY(-6px);
+}
+
+.polaroid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #ffeaf1;
+}
+
+.polaroid p {
+  text-align: center;
+  margin: 7px 0 -19px;
+  font: 600 13px 'Quicksand';
+  color: #ad8295;
+}
+
+.wish {
+  background: #fff3f7;
+  border: 2px dashed #ffc3d6;
+  border-radius: 22px;
+  text-align: center;
+  padding: 22px;
+  margin: 42px auto 15px;
+  max-width: 600px;
+}
+
+.wish h2 {
+  font: 800 25px 'Baloo 2';
+  color: #df83a4;
+  margin: 0 0 8px;
+}
+
+.wish p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.gift {
+  text-align: center;
+  margin: 35px auto 10px;
+}
+
+.giftbtn {
+  border: 0;
+  border-radius: 50px;
+  padding: 14px 25px;
+  background: #ff91b5;
+  color: white;
+  font: 700 14px 'Quicksand';
+  box-shadow: 0 6px 0 #e77c9e;
+  transition: 0.15s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.giftbtn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #e77c9e;
+}
+
+.giftmsg {
+  display: none;
+  max-width: 500px;
+  margin: 22px auto;
+  padding: 22px;
+  border-radius: 20px;
+  background: #fff4c9;
+  border: 2px solid #ffe39a;
+  font: 600 18px / 1.7 'Baloo 2';
+}
+
+.giftmsg.show {
+  display: block;
+  animation: pop 0.5s;
+}
+
+footer {
+  text-align: center;
+  padding: 42px 10px 10px;
+  color: #bd8ba0;
+  font-size: 13px;
+}
+
+.controls {
+  position: fixed;
+  right: 15px;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+}
+
+.control {
+  border: 2px solid #ffd0df;
+  background: #fff;
+  color: #c77898;
+  border-radius: 30px;
+  padding: 10px 14px;
+  font: 700 11px 'Quicksand';
+  box-shadow: 0 5px 15px #d78da522;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#music-note {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  color: #c77898;
+  padding: 14px 22px;
+  border-radius: 30px;
+  font: 700 13px 'Quicksand';
+  box-shadow: 0 5px 15px #d78da522;
+  z-index: 100;
+  display: none;
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .envelope { height: 220px; }
+  .bodytext { font-size: 16px; }
+  .controls { right: 8px; bottom: 8px; }
+  .control { padding: 9px 11px; }
+}
+
+@media (max-width: 600px) {
+  header { padding-left: 16px; padding-right: 16px; }
+  main { padding: 8px 14px 105px; }
+  .hero { margin: 16px 0 12px; }
+  h1 { font-size: clamp(34px, 10vw, 46px); line-height: 1.12; }
+  .sub { font-size: 14px; line-height: 1.6; padding: 0 8px; }
+  .stage { margin: 24px auto 10px; }
+  .envelope { width: min(340px, 90vw); height: 218px; }
+  .hint { font-size: 12px; padding: 0 12px; }
+  .letter { margin: 28px 0 0; padding: 24px 19px; border-radius: 20px; }
+  .date { font-size: 12px; }
+  .hello { font-size: 28px; }
+  .bodytext { font-size: 16px; line-height: 1.85; overflow-wrap: anywhere; }
+  .signature { font-size: 24px; }
+  .section-title { font-size: 23px; margin: 32px 0 16px; }
+  .gallery { gap: 12px; }
+  .polaroid { width: calc(50% - 8px); max-width: 170px; padding: 7px 7px 25px; }
+  .polaroid p { font-size: 11px; }
+  .wish { padding: 18px 15px; margin: 32px auto 12px; }
+  .wish h2 { font-size: 22px; }
+  .wish p { font-size: 14px; line-height: 1.75; }
+  .giftbtn { min-height: 48px; padding: 13px 20px; font-size: 13px; }
+  .giftmsg { font-size: 16px; padding: 18px; margin: 17px 0; }
+  footer { padding: 30px 18px 14px; font-size: 12px; }
+  .controls { left: 12px; right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); justify-content: center; gap: 10px; }
+  .control { flex: 1; max-width: 180px; min-height: 44px; padding: 11px 12px; font-size: 12px; }
+}
+
+@media (max-width: 360px) {
+  main { padding-left: 10px; padding-right: 10px; }
+  .envelope { height: 195px; }
+  .polaroid { width: calc(50% - 7px); }
+  .controls { left: 8px; right: 8px; }
+  .control { font-size: 11px; }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  main { padding: 20px 24px 80px; }
+  .envelope { width: min(390px, 85vw); }
+  .polaroid { width: min(220px, 30%); }
+  .controls { right: 20px; bottom: max(16px, env(safe-area-inset-bottom)); }
+}
