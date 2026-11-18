@@ -1,17 +1,12 @@
 {
-  "headline": "Có thư gửi cậu nè!",
-  "subline": "Mở ra đi, có điều dễ thương đang chờ cậu đó.",
-  "salutation": "He lu cậu iu,",
-  "date": "Một ngày thật xinh",
-  "body": "Tớ có một điều muốn gửi đến cậu nè!\n\nCảm ơn cậu vì đã xuất hiện trong cuộc sống của tớ, vì những lần cùng cười, cùng kể nhau nghe đủ thứ chuyện trên đời.\n\nỞ bên cậu, những điều bình thường cũng trở nên đáng nhớ hơn một chút. Mong là chúng mình sẽ còn có thật nhiều ngày vui như thế nữa nha. 💗",
-  "signature": "Thương cậu nhiều ơi là nhiều! ♡",
-  "footer": "Được làm bằng tất cả sự dễ thương dành cho cậu ♡",
-  "wish": "Chúc cậu mỗi ngày đều vui vẻ, ăn ngon, ngủ ngoan, gặp nhiều điều may mắn. Dù có chuyện gì xảy ra thì cũng nhớ yêu thương bản thân thật nhiều nhé!",
-  "gift": "Bất ngờ chưa? Điều tớ muốn tặng cậu nhất chính là thật nhiều cái ôm, thật nhiều nụ cười và thật nhiều ngày tháng có nhau. 💞",
-  "music": "music/love.mp3",
-  "photos": [
-    { "src": "photo1.jpg", "caption": "một chiếc kỷ niệm ♡" },
-    { "src": "photo2.jpg", "caption": "một chiếc kỷ niệm ♡" },
-    { "src": "photo3.jpg", "caption": "một chiếc kỷ niệm ♡" }
-  ]
+  "headline": "Có thư gửi anh nè!",
+  "subline": "Mở ra đi, có điều dễ thương đang chờ anh đó.",
+  "salutation": "He lu anh iu,",
+  "date": "19/11/2026",
+
+  "body": "Một vài lời muốn gửi đến anh!\n\nXa nhau cũng hơn 8 tháng rồi nhỉ. Nghĩ lại thì khoảng thời gian đó đối với em vừa ngắn cũng lại vừa dài. Ngắn vì cảm giác mới hôm nào mình vẫn còn cùng nhau đi hẹn hò, cùng đi ăn, đi chơi. Anh có nhớ ngày này năm ngoái mình làm gì không? Hôm đó vừa mưa vừa lạnh, em muốn rủ anh đi ăn mà anh lại ốm mất. Xong ngồi sau xe anh mà em khóc đó, nước mưa hoà nước mắt luôn. Khóc vì vừa thương anh, chắc cũng khóc khi em muốn làm gì đó cho anh nhưng lại không được, vừa buồn vừa bất lực. Cuối cùng là vẫn đi ăn, không hiểu anh chiều em kiểu gì nữa. Lúc về thì mưa lạnh đến mức em run cầm cập luôn, lần sau anh phải ưu tiên sức khoẻ mình lên hàng đầu, nhớ nhen. Dài cũng vì cảm thấy nhiều lúc muốn anh bên cạnh lại không được. Có những ngày tự nhiên em buồn chả hiểu tại sao, xong lại khóc, lại nhớ anh. Chắc cho bản thân khóc chút cũng tốt hen. Chính những lúc đó em cảm thấy tủi thân thực sự, khi mình có người thương mà lại như không có, không nhắn tin, gặp mặt thì ít, tâm sự cũng chẳng được mấy. Anh có thấy là từ lúc anh đi mình không còn thời gian để deep talk nữa, toàn tranh thủ lúc anh được dùng điện thoại thì kể xem cuộc sống của nhau dạo này như nào, có gì mới không. Cái lần em bảo anh là em tâm sự với bạn, bạn em bảo là em nản rồi ấy, em chắc là không phải như vậy đâu. Chỉ là em có những ngày em buồn, em muốn gặp anh, gọi anh, mà lại không thể, chắc lúc này em cho mình khóc một chút là được rồi he.\n\nCòn anh, em biết trong đó anh cũng vất vả, chịu nhiều thiệt thòi, nhưng mà em cũng đâu thể làm gì khác được. Chỉ biết dặn anh đừng nản lòng, phải mạnh mẽ, bao giờ muốn yếu đuối thì kể với em này. Còn mấy tháng nữa là anh được về chơi với em rồi, cố gắng lên nhen. Em biết anh làm được mà, chàng trai của em giỏi lắm. Yêu anh nhiều 💗",
+  "signature": "Thương anh nhiều ơi là nhiều! ♡",
+  "footer": "Được làm bằng tất cả sự dễ thương dành cho anh ♡",
+  "wish": "Chúc anh mỗi ngày đều vui vẻ, ăn ngon, ngủ ngoan, gặp nhiều điều may mắn. Dù có chuyện gì xảy ra thì cũng nhớ yêu thương bản thân thật nhiều nha!",
+  "gift": "Bất ngờ chưa? Điều em muốn tặng anh nhất chính là thật nhiều cái ôm, thật nhiều cái hôn và thật nhiều ngày tháng có nhau. 💞"
 }
